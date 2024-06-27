@@ -24,21 +24,21 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 600px;
+    margin: 0 auto; /* Center the container */
 }
 
 /* Title styling */
 h1 {
-    font-size: 2.5em;
+    font-size: 2em; /* Smaller font size for mobile screens */
     color: #ff6f61;
-    margin-bottom: 20px;
-    line-height: 1.2; /* Add some line height for better spacing */
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 /* Highlight class for "DENDAM" */
 .highlight {
     display: block; /* Forces the span to start on a new line */
-    font-size: 1em; /* Optional: you can adjust the font size here if needed */
-    margin-top: 10px; /* Optional: add margin to create space between lines */
+    font-size: 0.8em; /* Smaller font size for "DENDAM" */
     font-weight: bold; /* Optional: make "DENDAM" bold */
     color: #ff6f61; /* Optional: set color for consistency */
 }
@@ -50,18 +50,18 @@ h1 {
 
 video {
     width: 100%;
-    max-width: 400px; /* Default max width for larger screens */
+    max-width: 100%; /* Ensure video fills container width */
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Media query for mobile screens */
 @media (max-width: 600px) {
-    video {
-        max-width: 200px; /* Smaller max width for mobile screens */
+    h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
     }
 
-    h1 {
-        font-size: 2em; /* Smaller font size for mobile screens */
+    .highlight {
+        font-size: 0.7em; /* Adjust font size for "DENDAM" on smaller screens */
     }
 }
